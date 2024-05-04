@@ -1,0 +1,138 @@
+/*
+------ RULE 60/30/10 
+  ------ Primary color =  60% 
+  ------ Secondary = 30%
+  ------ Tertiary = 10%
+  ///// Just for knowledge
+  -- primary, secondary, tertiary, quaternary, quinary, senary, septenary, octonary, nonary, denary
+*/
+
+:root{
+  --primary-var1:#E6FFE5; /* background */
+  --primary-var2:#0A6847; /* Titles */
+  --primary-var3:#7ABA78; /* Subtitles */
+  --primary-var4:#c1f6bf; /* Subtitles */
+  --secondary-var1:#F3CA52; /* Titles */
+  --secondary-var2:#F6E9B2; /* Subtitles */
+  --tertiary-var1:#468DF2; /* Subtitles */
+  --tertiary-var2:#7486DF; /* Subtitles */
+  --tertiary-var3:#6474C2; /* Subtitles */
+  --gray:#D7D9B8; /* Subtitles */
+}
+
+
+h1{
+  display: inline-block;
+  border-bottom: var(--secondary-var1) solid 1px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.bg-primary-var1{
+  background-color: var(--primary-var1);
+  color: var(--primary-var2);
+}
+.bg-primary-var2{
+  background-color: var(--primary-var2);
+  color: var(--tertiary-var1);
+}
+.bg-primary-var3{
+  background-color: var(--primary-var3);
+  color: var(--tertiary-var1);
+}
+.bg-secondary-var1{
+  background-color: var(--secondary-var1);
+  color: var(--tertiary-var2);
+}
+.bg-secondary-var2{
+  background-color: var(--secondary-var2);
+  color: var(--tertiary-var3);
+}
+.bg-tertiary-var1{
+  background-color: var(--tertiary-var1);
+  color: var(--primary-var2);
+}
+.bg-tertiary-var2{
+  background-color: var(--tertiary-var2);
+  color: var(--primary-var2);
+}
+.bg-tertiary-var3{
+  background-color: var(--tertiary-var3);
+  color: var(--primary-var2);
+}
+.bg-gray{
+  background-color: var(--gray);
+  color: var(--secondary-var1);
+}
+
+
+.text-primary-var1{
+  color: var(--primary-var1);
+}
+.text-primary-var2{
+  color: var(--primary-var2);
+}
+.text-primary-var3{
+  color: var(--primary-var3);
+}
+.text-secondary-var1{
+  color: var(--secondary-var1);
+}
+.text-secondary-var2{
+  color: var(--secondary-var2);
+}
+.text-tertiary-var1, h1, h4{
+  color: var(--tertiary-var1);
+}
+.text-tertiary-var2, h2, h5{
+  color: var(--tertiary-var2);
+}
+.text-tertiary-var3, h3, h6{
+  color: var(--tertiary-var3);
+}
+.text-gray{
+  color: var(--gray);
+}
+
+.container-sesion{
+  background-color: var(--primary-var4);
+  border: var(--primary-var2) solid 1px;
+
+}
+
+.nav a:focus{
+  background-color: var(--primary-var3);
+}
+.nav a:hover{
+  background-color: var(--primary-var3);
+  transition: background-color 5s ease-out;
+}
+
+.d-relative{
+  position:fixed;
+  bottom: 24px;
+  right: 20%;
+  z-index: 1;
+}
+
+.d-relative, .d-relative svg, .d-relative a{
+  border: 0;
+  padding: 0;
+  margin: 0;
+  width: 2rem;
+  height: 2rem;
+}
+
+@media (max-width: 400px) {
+  .d-relative, .d-relative svg, .d-relative a{
+    width: 1.5rem;
+    height: 1.5rem;
+  } 
+}
+
+.full-width-img{
+  border-radius: 5px;
+  border: var(--primary-var2) solid 1px;
+  height: auto;
+  width: 90%;
+}
