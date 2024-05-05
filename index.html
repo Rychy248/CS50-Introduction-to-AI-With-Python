@@ -55,9 +55,9 @@
 
 
   <!-- Header-------------------------- -->
-  <div class="container text-center">
+  <div id="top" class="container text-center">
     <h1 class="h1 text-tertiary-var1 d-block">Resume of the eight Sessions</h1>
-    <button id="menu" class="btn btn-primary w-50" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</button>
+    <button class="btn btn-primary w-50" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</button>
   </div>
   
 
@@ -75,13 +75,61 @@
     </div>
     
     <!-- SESSION 2-------------------------- -->
-    <div>
+    <div class="container container-sesion mx-auto p-1 rounded-3 m-2">
       <h1 id="section-search">Search</h1>
-      <p>This sections talking about s</p>
+      <p>This sections contains:</p>
+      <h1 class="text-danger">#### I'M AT MINUTE 7:50</h1>
+      <div class="accordion accordion-flush accordion-border-color-primary id="accordionFlushExample">
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Video Lecture
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/WbzNRTTrX0g?si=H8HOvIDNSW03oAn5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Notes
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <a href="https://cs50.harvard.edu/ai/2024/notes/0/" target="_blank">Important notes of this session</a>
+              <h2>Elements</h2>
+              <ol>
+                <li><b>Agent: </b>Represent the entity into the context, example into a search for shorter way to get from a to b point, the agent could be the car.</li>
+                <li><b>State: </b>It's the initial situation of the context and the agent.</li>
+                <li><b>Action: </b>Actions(<i>S</i>) returns the set of actions that can be executed in state <i><b>S</b></i>, an action can be set under a certain state and it cannot be set under other. Example: if we have the fifth numbers to order, we only can move up, right, left or bottom the square of one number not of two or n where n!=1</li>
+                <li><b>Transition model: </b>This describe the relation between the state and the Action, this describe how the state react or act by under action as a param. <i>Results(s, a) returns the state resulting from performing action <b>a</b> in state <b>s</b></i></li>
+              </ol>
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <!-- SESSION 3-------------------------- -->
-    <div>
+    <div class="container container-sesion mx-auto p-1 rounded-3 m-2">
       <h1 id="section-knowledge">Knowledge</h1>
 
     </div>
@@ -89,8 +137,8 @@
   </div>
 
   <!-- UP BUTTON-------------------------- -->
-  <div class="d-relative">
-    <a href="#menu">
+  <div class="upp-button">
+    <a href="#top">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5"/>
       </svg>
